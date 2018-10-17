@@ -1,0 +1,192 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Pesquisar um  video no youtube",
+        "description": "",
+        "id": "ver-um-video-no-youtube;pesquisar-um--video-no-youtube",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7085163200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que estou acessando o youtube",
+            "match": {
+              "location": "PesquisarVideoYoutubeSteps.queEstouAcessandoOYoutube()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1357848000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "eu pesquisar \"rise\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rise",
+                  "offset": 14
+                }
+              ],
+              "location": "PesquisarVideoYoutubeSteps.euPesquisar(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 72850600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicar pesquisar",
+            "match": {
+              "location": "PesquisarVideoYoutubeSteps.clicarPesquisar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 82500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "pesquisa concluida",
+            "match": {
+              "location": "PesquisarVideoYoutubeSteps.pesquisaConcluida()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Escolher um video",
+        "description": "",
+        "id": "ver-um-video-no-youtube;escolher-um-video",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4823852900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que eu pesquisei \"rise\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rise",
+                  "offset": 18
+                }
+              ],
+              "location": "PesquisarVideoYoutubeSteps.queEuPesquisei(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 218714900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "eu selecionar o primeiro video",
+            "match": {
+              "location": "PesquisarVideoYoutubeSteps.euSelecionarOPrimeiroVideo()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 71400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "ele deve tocar",
+            "match": {
+              "location": "PesquisarVideoYoutubeSteps.eleDeveTocar()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Escolher um video enquanto eu estiver assistindo outro video",
+        "description": "",
+        "id": "ver-um-video-no-youtube;escolher-um-video-enquanto-eu-estiver-assistindo-outro-video",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4961857800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "que estou assistindo \"https://www.youtube.com/watch?v\u003dfB8TyLTD7EE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.youtube.com/watch?v\u003dfB8TyLTD7EE",
+                  "offset": 22
+                }
+              ],
+              "location": "PesquisarVideoYoutubeSteps.queEstouAssistindo(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 241714400,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat Steps.PesquisarVideoYoutubeSteps.selecionarOVideo(PesquisarVideoYoutubeSteps.java:81)\r\n\tat ✽.Quando selecionar o video(src/test/resources/features/PesquisarVideoYoutube.feature:19)\r\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "selecionar o video",
+            "match": {
+              "location": "PesquisarVideoYoutubeSteps.selecionarOVideo()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "ele deve trocar",
+            "match": {
+              "location": "PesquisarVideoYoutubeSteps.eleDeveTrocar()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Ver um video no youtube",
+    "description": "",
+    "id": "ver-um-video-no-youtube",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/PesquisarVideoYoutube.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@VerVideo"
+      }
+    ]
+  }
+]
